@@ -9,9 +9,13 @@ public class ExamenMedical {
 	
 	private String typeEquipementRequis;//added
 
+	
+	public ExamenMedical() {
+		//for jsonnn
+	}
 	public ExamenMedical(String idExamen, String codeActe, String libelle, int dureeEstimeeMinutes, double tarifHT,
 			String typeEquipementRequis) {
-		super();
+		
 		this.idExamen = idExamen;
 		this.codeActe = codeActe;
 		this.libelle = libelle;
