@@ -1,5 +1,6 @@
 package entity;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class ManipulateurRadio {
@@ -7,7 +8,7 @@ public class ManipulateurRadio {
 	private String cin;
 	private String nom;
 	private String prenom;
-	Set<Habilitation> habilitations;
+	Set<Habilitation> habilitations=new HashSet<>();
 	private double tarifHoraire;
 	private boolean statutDispo;
 	

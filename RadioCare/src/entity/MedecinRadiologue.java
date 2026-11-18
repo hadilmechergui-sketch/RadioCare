@@ -1,5 +1,7 @@
 package entity;
 
+import java.util.List;
+
 public class MedecinRadiologue {
 	private String idMedecin;
 	private String cin;
@@ -7,10 +9,10 @@ public class MedecinRadiologue {
 	private String prenom;
 	private Specialite specialite;
 	private double tarifPoourccentageActe;
-	private List<Creneau> dispoPlanning;
+	private List<PlageHoraire> dispoPlanning;
 	
 	public MedecinRadiologue(String idMedecin, String nom, String prenom, String cin, Specialite specialite,
-			double tarifPoourccentageActe, List<Creneau> dispoPlanning) {
+			double tarifPoourccentageActe, List<PlageHoraire> dispoPlanning) {
 		super();
 		this.idMedecin = idMedecin;
 		this.nom = nom;
@@ -56,10 +58,10 @@ public class MedecinRadiologue {
 	public void setTarifPoourccentageActe(double tarifPoourccentageActe) {
 		this.tarifPoourccentageActe = tarifPoourccentageActe;
 	}
-	public List<Creneau> getDispoPlanning() {
+	public List<PlageHoraire> getDispoPlanning() {
 		return dispoPlanning;
 	}
-	public void setDispoPlanning(List<Creneau> dispoPlanning) {
+	public void setDispoPlanning(List<PlageHoraire> dispoPlanning) {
 		this.dispoPlanning = dispoPlanning;
 	}
 	

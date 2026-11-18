@@ -6,11 +6,11 @@ public class SalleRadiologie {
 	private int numeroEtage;
 	private String typeSalle;
 	private String equipementAtrribuId;
-	private String normeBlindagePlomb;
+	private double normeBlindagePlomb;
 	private boolean statutDispo;
 	
 	public SalleRadiologie(String idSalle, String nom, int numeroEtage, String typeSalle, String equipementAtrribuId,
-			String normeBlindagePlomb, boolean statutDispo) {
+			double normeBlindagePlomb, boolean statutDispo) {
 		super();
 		this.idSalle = idSalle;
 		this.nom = nom;
@@ -55,10 +55,10 @@ public class SalleRadiologie {
 	public void setEquipementAtrribuId(String equipementAtrribuId) {
 		this.equipementAtrribuId = equipementAtrribuId;
 	}
-	public String getNormeBlindagePlomb() {
+	public double getNormeBlindagePlomb() {
 		return normeBlindagePlomb;
 	}
-	public void setNormeBlindagePlomb(String normeBlindagePlomb) {
+	public void setNormeBlindagePlomb(double normeBlindagePlomb) {
 		this.normeBlindagePlomb = normeBlindagePlomb;
 	}
 	public boolean isStatutDispo() {

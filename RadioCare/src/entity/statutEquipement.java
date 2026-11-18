@@ -1,14 +1,7 @@
 package entity;
 
-public class statutEquipement {
-	private String[] statut= {"En service","En panne","En maintenance"};
-
-	public String[] getStatut() {
-		return statut;
-	}
-
-	public void setStatut(String[] statut) {
-		this.statut = statut;
-	}
-	
+public enum statutEquipement {
+	EN_SERVICE,
+	EN_PANNE,
+	EN_MAINTENANCE
 }

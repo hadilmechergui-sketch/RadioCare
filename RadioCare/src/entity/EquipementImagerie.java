@@ -1,6 +1,6 @@
 package entity;
 
-public class equipementImagerie {
+public class EquipementImagerie {
 	private String idEquipement;
 	private TypeEquipement type;
 	private String marque;
@@ -56,11 +56,11 @@ public class equipementImagerie {
 		Statut = statut;
 	}
 
-	public equipementImagerie() {
+	public EquipementImagerie() {
 		super();
 	}
 
-	public equipementImagerie(String idEquipement, TypeEquipement type, String marque, double heuresCumules,
+	public EquipementImagerie(String idEquipement, TypeEquipement type, String marque, double heuresCumules,
 			double heuresRestantesMaintenance, statutEquipement statut) {
 		super();
 		this.idEquipement = idEquipement;

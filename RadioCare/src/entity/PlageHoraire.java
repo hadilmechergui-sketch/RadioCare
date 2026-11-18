@@ -3,7 +3,7 @@ package entity;
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 
-public class Creneau {
+public class PlageHoraire {
 	private DayOfWeek jour;
 	private LocalTime debut;
 	private LocalTime fin;
@@ -27,14 +27,14 @@ public class Creneau {
 		this.fin = fin;
 	}
 	
-	public Creneau(DayOfWeek jour, LocalTime debut, LocalTime fin) {
+	public PlageHoraire(DayOfWeek jour, LocalTime debut, LocalTime fin) {
 		super();
 		this.jour = jour;
 		this.debut = debut;
 		this.fin = fin;
 	}
 	
-	public Creneau() {
+	public PlageHoraire() {
 		super();
 	}
 	
