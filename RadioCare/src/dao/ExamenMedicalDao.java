@@ -13,7 +13,7 @@ import com.google.gson.GsonBuilder;
 
 import entity.ExamenMedical;
 
-public class ExamenDao {
+public class ExamenMedicalDao {
 	private String fichier = "data/examens.json";
 	
 	private List<ExamenMedical> examens = new ArrayList<>();
@@ -21,7 +21,7 @@ public class ExamenDao {
 			.setPrettyPrinting()
 			.create();
 			
-	public ExamenDao() {
+	public ExamenMedicalDao() {
 		charger();
 	}
 	private void charger() {
