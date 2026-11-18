@@ -1,0 +1,10 @@
+[
+  {
+    "idCompteRendu": "cr-001",
+    "idRdv": "rdv-001",
+    "date": "2026-11-18",
+    "refOrdonnanceTextuelle": "123",
+    "transcriptionDiagnosticTextuel": "yea",
+    "codeResultat": "normal"
+  }
+]
