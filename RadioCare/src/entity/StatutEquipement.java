@@ -1,6 +1,6 @@
 package entity;
 
-public enum statutEquipement {
+public enum StatutEquipement {
 	EN_SERVICE,
 	EN_PANNE,
 	EN_MAINTENANCE
