@@ -6,7 +6,7 @@ public class EquipementImagerie {
 	private String marque;
 	private double heuresCumules;
 	private double heuresRestantesMaintenance;
-	private statutEquipement Statut;
+	private StatutEquipement Statut;
 	
 	public String getIdEquipement() {
 		return idEquipement;
@@ -48,11 +48,11 @@ public class EquipementImagerie {
 		this.heuresRestantesMaintenance = heuresRestantesMaintenance;
 	}
 
-	public statutEquipement getStatut() {
+	public StatutEquipement getStatut() {
 		return Statut;
 	}
 
-	public void setStatut(statutEquipement statut) {
+	public void setStatut(StatutEquipement statut) {
 		Statut = statut;
 	}
 
@@ -61,7 +61,7 @@ public class EquipementImagerie {
 	}
 
 	public EquipementImagerie(String idEquipement, TypeEquipement type, String marque, double heuresCumules,
-			double heuresRestantesMaintenance, statutEquipement statut) {
+			double heuresRestantesMaintenance, StatutEquipement statut) {
 		super();
 		this.idEquipement = idEquipement;
 		this.type = type;
