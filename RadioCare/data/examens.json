@@ -1,0 +1,9 @@
+[
+  {
+    "idExamen": "EX-002",
+    "codeActe": "ACT-IRM",
+    "libelle": "IRM cerebrale",
+    "dureeEstimeeMinutes": 6,
+    "tarifHT": 5.0
+  }
+]
