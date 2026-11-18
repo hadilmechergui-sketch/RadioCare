@@ -7,21 +7,20 @@ public class ExamenMedical {
 	private int dureeEstimeeMinutes;
 	private double tarifHT;
 	
-	private String typeEquipementRequis;//added
+	
 
 	
 	public ExamenMedical() {
 		//for jsonnn
 	}
-	public ExamenMedical(String idExamen, String codeActe, String libelle, int dureeEstimeeMinutes, double tarifHT,
-			String typeEquipementRequis) {
+	public ExamenMedical(String idExamen, String codeActe, String libelle, int dureeEstimeeMinutes, double tarifHT) {
 		
 		this.idExamen = idExamen;
 		this.codeActe = codeActe;
 		this.libelle = libelle;
 		this.dureeEstimeeMinutes = dureeEstimeeMinutes;
 		this.tarifHT = tarifHT;
-		this.typeEquipementRequis = typeEquipementRequis;
+		
 	}
 
 	public String getIdExamen() {
@@ -64,13 +63,7 @@ public class ExamenMedical {
 		this.tarifHT = tarifHT;
 	}
 
-	public String getTypeEquipementRequis() {
-		return typeEquipementRequis;
-	}
-
-	public void setTypeEquipementRequis(String typeEquipementRequis) {
-		this.typeEquipementRequis = typeEquipementRequis;
-	}
+	
 
 	@Override
 	public String toString() {
