@@ -37,7 +37,7 @@ public class MedecinDao {
 				
 			}
 		}catch (IOException e) {
-			throw new RuntimeException("impossible de lire le fichire medecins.json",e);
+			throw new RuntimeException("impossible de lire le fichier medecins.json",e);
 		}
 	}
 	
@@ -56,9 +56,9 @@ public class MedecinDao {
 	public List<MedecinRadiologue> findAll(){
 		return medecins;
 	}
-	public MedecinRadiologue findById(String cin) {
+	public MedecinRadiologue findById(String idMedecin) {
 		for(MedecinRadiologue p : medecins) {
-			if(p.getIdMedecin().equals(cin)) {
+			if(p.getIdMedecin().equals(idMedecin)) {
 				return p;
 			}
 		}
@@ -83,8 +83,8 @@ public class MedecinDao {
 		}
 	}
 	
-	public boolean delete(String cin ) {
-		MedecinRadiologue p = findById(cin);
+	public boolean delete(String idMedecin ) {
+		MedecinRadiologue p = findById(idMedecin);
 		if (p== null) {
 			return false;
 		}
