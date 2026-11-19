@@ -16,13 +16,47 @@ public class MedecinService {
 		if(medecinDao.findById(medecin.getIdMedecin())==null) {
 			throw new IllegalArgumentException("ERREUR: Le medecin ayant l'ID"+medecin.getIdMedecin()+" n'existe pas!");
 		}
+		if(medecinDao.findByCin(medecin.getCin())!=null) {
+			throw new IllegalArgumentException("ERREUR: Un medecin avec ce CIN existe deja!");
+		}
 		medecinDao.save(medecin);
+	}
+	
+	public MedecinRadiologue chercherParId(String idMedecin) {
+		MedecinRadiologue m = medecinDao.findById(idMedecin);
+		if ( m== null) {
+			throw new IllegalArgumentException("ERREUR: aucun medecin trouve avec l'ID "+ idMedecin);
+		}
+		return m;
+	}
+	
+	public MedecinRadiologue chercherParCin(String cin) {
+		MedecinRadiologue m = medecinDao.findById(cin);
+		if ( m== null) {
+			throw new IllegalArgumentException("ERREUR: aucun medecin trouve avec le CIN "+ cin);
+		}
+		return m;
+	}
+	
+	public List<MedecinRadiologue> listerTousLesMedecins(){
+		return medecinDao.findAll();
+	}
+	
+	public void supprimerMedecin(String idMedecin) {
+		
+		boolean supprime = medecinDao.delete(idMedecin);
+		if (!supprime) {
+			throw new IllegalArgumentException("ERREUR: impossible de supprimer le medecin  :"+idMedecin + " n'existe pas");
+		}
 	}
 	
 	public void ajouterMedecin(MedecinRadiologue medecin) {
 		valider(medecin);
 		if(medecinDao.findById(medecin.getIdMedecin())!=null) {
 			throw new IllegalArgumentException("ERREUR: Un medecin avec cet ID existe deja!");
+		}
+		if(medecinDao.findByCin(medecin.getCin())!=null) {
+			throw new IllegalArgumentException("ERREUR: Un medecin avec ce CIN existe deja!");
 		}
 		medecinDao.save(medecin);
 	}

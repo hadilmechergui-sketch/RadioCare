@@ -65,6 +65,15 @@ public class MedecinDao {
 		return null;
 	}
 	
+	public MedecinRadiologue findByCin(String cin) {
+		for(MedecinRadiologue p : medecins) {
+			if(p.getCin().equals(cin)) {
+				return p;
+			}
+		}
+		return null;
+	}
+	
 	
 	
 	
